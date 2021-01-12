@@ -1,6 +1,6 @@
 <header>
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">Login</a></li>
+      <li><%= link_to 'Signup', signup_path%></li>
       <li><a href="#!">Signup</a></li>
       <li class="divider"></li>
       <li><a href="#!">Logout</a></li>
@@ -14,7 +14,7 @@
       <nav>
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo right">Tech University</a>
+            <%= link_to 'Tech Univeristy', root_path, class: "brand-logo right" %>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
               <li><a href="#">Courses</a></li>
