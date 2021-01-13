@@ -1,3 +1,9 @@
 <% @courses.each do |course| %>
-    <%= course.title %>
+    <div class="container">
+        <div class="row">
+            <div class="col s4"> <%= course.title %></div>
+            <div class="col s4"> <%= course.short_title %></div>
+            <div class="col s4"> <%= course.description %></div>
+        </div>
+    </div>
 <% end %>
