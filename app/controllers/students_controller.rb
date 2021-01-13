@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
 
     def home
+        @students = Student.all
     end
 
     def new

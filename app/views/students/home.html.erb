@@ -1,1 +1,20 @@
-Welcome to pages controller home action
+<div class="row">
+  <div class="col s12">
+    <h1 class="center-align">Student Directory</h1>
+  </div>
+</div>
+<div class="row">
+  <% @students.each do |student| %>
+    <div class="col s6 m6">
+      <div class="card teal darken-1">
+        <div class="card-content white-text">
+          <span class="card-title"><%= student.name %></span>
+          <p><%= student.email %></p>
+          <p>Course Enrollments: None</p>
+        </div>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
