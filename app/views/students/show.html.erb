@@ -1,1 +1,20 @@
-We are in the show for students
+<div class="row">
+  <div class="col s12">
+    <h1 class="center-align"><%= @student.name %>'s Profile</h1>
+  </div>
+</div>
+<div class="container">
+<div class="row sign-up-form">
+    <div class="col s6 m6">
+      <div class="card teal darken-1">
+        <div class="card-content white-text">
+          <span class="card-title"><%= @student.name %></span>
+          <p><%= @student.email %></p>
+          <p>Course Enrollments: None</p>
+        </div>
+      </div>
+      
+      <%= link_to '<i class="material-icons right">edit</i>Edit your profile'.html_safe, edit_student_path(@student), class:"waves-effect waves-light btn" %>
+    </div>
+</div>
+</div>
