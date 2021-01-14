@@ -8,19 +8,31 @@
                 <%= form_for(@student, html:{class: "col s12 center"}) do |f| %>
                         <div class="row ">
                             <div class="input-field col s8 offset-s2">
-                            <%= f.label :name %>
+                            <%= f.label :name, class: "active" %>
                             <%= f.text_field :name, class: "validate"%>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s8 offset-s2">
-                            <%= f.label :email %>
+                            <%= f.label :email, class: "active" %>
                             <%= f.email_field :email, class: "validate" %>
+                            </div>
+                        </div>
+                            <div class="row">
+                            <div class="input-field col s8 offset-s2">
+                            <%= f.label :password, class: "active" %>
+                            <%= f.password_field :password, class: "validate" %>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="input-field col s8 offset-s2">
+                            <%= f.label :password_confirmation, class: "active" %>
+                            <%= f.password_field :password_confirmation, class: "validate" %>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col s12">
-                           <%= f.submit(@student.new_record? ? "Sign up" : "Save Changes", class: "btn waves-effect waves-light") %>
+                           <%= f.button(@student.new_record? ? "Sign up" : "Save Changes", class: "btn waves-effect waves-light") %>
                             </div>
                         </div>
                         <% end %>
